@@ -1,0 +1,61 @@
+body{
+	 background:#E5E1D6;
+}
+header{
+	height:50px;
+	 border: 2px solid black;
+	 background:#AED1ED;
+	text-align:center;
+	padding:10px;
+	font-weight:bold;
+	font-size:30px;
+}
+section{
+	height:800px;
+	margin:30px;
+	border: 2px solid black;
+}
+
+.container{
+    width: 250px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+	color:blue;
+	text-align:center;
+	padding:20px;
+	font-size:20px;
+	float:left;
+	margin:20px;
+}
+
+
+.sampleRotation:hover {
+ -ms-transform: rotate(360deg);
+ -webkit-transform: rotate(360deg);
+ transform: rotate(360deg);
+ transition-duration:5s;
+}
+
+.sampleScaling:hover {
+	margin-top:150px;
+	margin-left:200px;
+	-ms-transform: scale(2,3);
+	-webkit-transform: scale(2,3);
+	transform: scale(2,3);
+	transition-duration:5s;
+}
+
+.sampleSkew-X:hover {
+ -ms-transform: skewX(20deg);
+ -webkit-transform: skewX(20deg);
+ transform: skewX(20deg);
+ transition-duration:5s;
+}
+
+.sampleSkew-Y:hover {
+-ms-transform: skewY(20deg); /* IE 9 */
+-webkit-transform: skewY(20deg); /* Safari */
+transform: skewY(20deg);
+transition-duration:5s;
+}

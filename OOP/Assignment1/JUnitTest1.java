@@ -3,37 +3,51 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
+
+
 public class JUnitTest1 {
 
-	@Test
-	public void test() {
-		Matrix matrixActual= new Matrix(3,3);
-		matrixActual.addElements(0, 0, 1);
-		matrixActual.addElements(0, 1, 1);
-		matrixActual.addElements(0, 2, 1);
-		matrixActual.transpose();
-		int transposeActual[][]=matrixActual.data;
-		int transposeExpected[][]={{1,0,0},{1,0,0},{1,0,0}};
-		
-		assertEquals("",1,isArrayEqual(transposeExpected, transposeActual));
-	}
-	
-	
-	public int isArrayEqual(int expected[][], int actual[][])
+	int isEqual(int[][] expected, int[][] actual)
 	{
-		int result=1;
-		for(int i=0;i<3;i++)
+		int comp=1;
+		for(int countRow=0;countRow<expected.length;countRow++)
 		{
-			for(int j=0;j<3;j++)
+			for(int countCol=0;countCol<expected[0].length;countCol++)
 			{
-				if(expected[i][j]!=actual[i][j])
-				{
-					result=0;
-				}
+				if(expected[countRow][countCol]!=actual[countRow][countCol])
+					return 0;
 			}
 		}
-		return result;
+		return comp;
 	}
-	
+	@Test
+	public void testForValidation() {
+		int output;
+		Matrix matrix=new Matrix(2,3);
+		JUnitTest1 assign=new JUnitTest1();
+		int[][] data={{2,3,5},{4,9,8}};
+		int[][] expected={{2,4},{3,9},{5,8}};
+		matrix.data=data;
+		matrix=matrix.transpose();
+		output=assign.isEqual(matrix.data,expected);
+		assertEquals("not match",1,output);
 
+
+	}
+	@Test
+	public void testForInValidation() {
+		int output;
+		Matrix matrix=new Matrix(2,3);
+		JUnitTest1 assign=new JUnitTest1();
+		int[][] data={{2,3,5},{4,9,8}};
+		int[][] expected={{0,0},{0,0},{0,0}};
+		matrix.data=data;
+		matrix=matrix.transpose();
+		output=assign.isEqual(matrix.data,expected);
+		assertEquals("not match",0,output);
+
+
+	}
 }
+
+

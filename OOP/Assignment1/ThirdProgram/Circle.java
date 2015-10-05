@@ -13,7 +13,7 @@ public class Circle implements Shape{
 	@Override
 	public double getArea() {
 		// TODO Auto-generated method stub
-		double result=2*3.14*radius;
+		double result=3.14*radius*radius;
 		return result;
 	}
 
