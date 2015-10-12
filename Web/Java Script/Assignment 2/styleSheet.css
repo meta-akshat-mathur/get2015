@@ -1,0 +1,54 @@
+
+.wrapper {
+	margin:0 auto;
+	width:100%;
+	background:#85C2FF;
+	text-align:center;
+	height:100%;
+ } 
+  .registration {
+    background: black;
+    height:60px;
+	color:#85C2FF;
+    text-align:center;
+    padding-top:40px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+ .top {
+	 margin:0 auto;
+	width:100%;
+	padding-top:10px;
+	background:#85C2FF;
+   text-align:center;
+ } 
+#table
+{ width: 18%;
+   padding-top:10px;
+   margin:0 auto;
+   text-align:center;
+}
+.name
+{
+	border-right:2px solid;
+}
+/*#tables
+{ border:2px solid gray;
+	
+}*/
+#graph
+{  width:50%;
+    margin:0 auto;
+	text-align:center;
+	table-collapse:collapse;
+}
+.createGraph
+{    margin-top:10px;
+	color: black;
+	 text-decoration: none;
+	-webkit-border-radius: 10px;
+	 cursor: pointer;
+    font-size:13px;
+}
+ 
