@@ -1,6 +1,6 @@
 CREATE DATABASE User_Details;
 
-USE User_information;
+USE User_Details;
 
 CREATE TABLE Registration(
     username VARCHAR(20) PRIMARY KEY,
