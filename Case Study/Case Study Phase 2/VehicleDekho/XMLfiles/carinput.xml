@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<car>
+	<row type="car">
+		<vehicleId>1</vehicleId>
+		<make>Ford</make>
+		<model>Figo</model>
+		<engineInCC>2000</engineInCC>
+		<fuelCapacity>50</fuelCapacity>
+		<mileage>22</mileage>
+		<price>850000.41f</price>
+		<roadTax>40000.21f</roadTax>
+		<ac>true</ac>
+		<powerSteering>true</powerSteering>
+		<accessoryKit>true</accessoryKit>
+	</row>
+	<row type="car">
+		<vehicleId>1</vehicleId>
+		<make>Ford</make>
+		<model>Figo</model>
+		<engineInCC>2000</engineInCC>
+		<fuelCapacity>50</fuelCapacity>
+		<mileage>22</mileage>
+		<price>850000.41f</price>
+		<roadTax>40000.21f</roadTax>
+		<ac>true</ac>
+		<powerSteering>true</powerSteering>
+		<accessoryKit>false</accessoryKit>
+	</row>
+</car> 
