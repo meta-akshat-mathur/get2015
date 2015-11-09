@@ -1,0 +1,181 @@
+
+/** adbox **/
+#content #adbox {
+	height: 585px;
+	position: relative;
+
+}
+#adbox  #contents1 {
+	height: 30%;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0 10px;
+	position: relative;
+	top:20px;
+}
+#adbox  div img {
+	float: left;
+	margin-left: 25px;
+}
+#search{
+	color: white;
+}
+
+#adbox span.footer {
+	display: block;
+	height: 146px;
+	width: 100%;
+	position: absolute;
+	bottom: -72px;
+	left: 0;
+}
+
+
+/** adbox **/
+#contents #adbox {
+	height: 303px;
+	position: relative;
+
+}
+#adbox  #contents1 {
+	height: 30%;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0 10px;
+	position: relative;
+	top:20px;
+}
+#adbox  div img {
+	float: left;
+	margin-left: 25px;
+}
+#search{
+	color: white;
+}
+
+#adbox span.footer {
+	display: block;
+	height: 146px;
+	width: 100%;
+	position: absolute;
+	bottom: -72px;
+	left: 0;
+}
+
+/** Featured **/
+#featured {
+	padding: 50px 0px 0px 50px;
+	height:410px
+}
+#featured a {
+	display: inline-block;
+	/*height: 318px;*/
+	width: 314px;
+	margin-left: 4px;
+	text-decoration:none;
+	color:#848484;
+	font-size:20px;
+}
+#featured img {
+	background-position: -324px 0;
+	border-radius: 10px;
+	height:70%;
+	width:80%;
+	margin-right:30%;
+	border:5px double grey;
+}
+
+#featured img:hover{
+	background-position: -324px 0;
+	border-radius: 10px;
+	height:80%;
+	width:100%;
+	margin-right:40%;
+}
+
+
+#contents #searchResult{
+	height:50%;
+}
+
+#searchResult ul{
+	list-style:none;
+}
+#searchResult img{
+	width:80%
+}
+
+#searchResult li{
+	display:inline-block;
+	width:20%;
+	margin-right:10%;
+	margin-top:10%;
+}
+
+#login{
+    position: relative;
+    top: 10%;
+	
+}
+# abc img{
+	width:100%;
+	height:100%;
+}
+#abc{
+	height:100px;
+	width:100%;
+	
+}
+
+#adbox #contactdetail{
+    float: none;
+    margin: auto auto auto 32%;
+    position: relative;
+    top: 20%;
+}
+
+#adbox #contactdetail form{
+	margin-top:2%;
+	margin-left:5%;
+}
+
+#adbox #contactdetail img{
+	  float: left;
+    height: 50%;
+    margin-top: 40px;
+    width: 20%
+}
+
+#contents #searchDetails {
+	text-align:center;
+}
+
+#contents #searchDetails h1 {
+	font-family:'HandveticaNeueRegularTrial';
+}
+
+#car1 form img{
+	border:7px double lightgrey;
+	border-radius:15px;
+	width:25%;
+	height:35%;
+}
+
+#contents1 #para{
+	width:50%;
+	height:%;
+}
+
+#contents h1,h3{
+	font-family:HandveticaNeueRegularTrial;
+}
+
+select{
+	width:15%;
+}
+#backgroundcontainer{
+	background: url(images/home-top-banner.jpg) no-repeat center -18%;
+	height: 585px;
+	position: relative;
+}
+
