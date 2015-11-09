@@ -1,0 +1,196 @@
+<html>
+<head>
+	<title>Movie Review Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"
+		href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script
+		src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>	
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="assignment3.html">Metacube</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#"><label class="hidden-sm">Home</label>
+							<span
+							class="glyphicon glyphicon-home hidden-lg hidden-md hidden-xs"></span></a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#"><label class="hidden-sm">CSS</label><span
+							class="glyphicon glyphicon-chevron-down hidden-lg hidden-md hidden-xs"></span><span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Button</a></li>
+							<li><a href="#">Panel</a></li>
+							<li><a href="#">Grid</a></li>
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Pagination</a></li>
+							<li><a href="#">Progress Bar</a></li>
+						</ul></li>
+					<li><a href="#"><label class="hidden-sm">About</label> <span
+							class="glyphicon glyphicon-cog hidden-lg hidden-md hidden-xs"></span></a></li>
+					<li><a href="form.html"><label class="hidden-sm">MovieForm</label>
+							<span
+							class="glyphicon glyphicon-file hidden-lg hidden-md hidden-xs"></span></a></li>
+					<li onclick="addTable();"><a href="assignment3.html"><label class="hidden-sm">MovieReview</label>
+							<span
+							class="glyphicon glyphicon-picture hidden-lg hidden-md hidden-xs"></span></a></li>
+					<li><a href="#"><span
+							class="glyphicon glyphicon-user hidden-sm"></span> <label
+							class="hidden-sm">ContactUs</label> <span
+							class="glyphicon glyphicon-star hidden-lg hidden-md hidden-xs"></a></li>
+					<li><a href="#"><label class="hidden-sm">Logout <span
+								class="glyphicon glyphicon-log-out"></label> <span
+							class="glyphicon glyphicon-log-out hidden-lg hidden-md hidden-xs"></span></a></li>
+				</ul>
+					<div class="nav navbar-nav navbar-right">
+					<form class="navbar-form" role="search"
+					action="Search.html?title=<script>document.getElementById('srch-term').value</script>"
+					method="get">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search"
+							name="srch-term" id="srch-term">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+					</div>
+			</div>
+	</nav>
+	
+
+	<div class ="row ">
+		<div class="hidden-lg hidden-md hidden-sm col-xs-3">
+			<img src="media.jpg" class="img-rounded" height="70px" width="70px"/>
+		</div>	
+		<div class="text-center col-lg-12 col-md-12 col-sm-12 hidden-xs">
+			<h1>MOVIE FORM </h1>
+		</div>	
+		
+	</div>
+	
+	<div class="container-fluid well">
+		<form role="form">
+			<div class="form-group form-inline row">
+				<div class="col-lg-1 col-md-2 col-sm-6 hidden-xs">
+					<label for="movietitle">Movie Title:</label>
+				</div>
+				<div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
+					<input type="text" class="form-control" id="movietitle"
+						style="width: 100%" placeholder="Enter movie title">
+				</div>
+				<div class="col-lg-1 col-md-2 col-sm-6 hidden-xs">
+					<label for="genre">Genre:</label>
+				</div>
+				<div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
+					<select class="form-control" id="genre" style="width: 100%" placeholder="Select Genre">
+						<option>Comedy</option>
+						<option>Thriller</option>
+						<option>Romantic</option>
+						<option>Action</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group form-inline row">
+				<div class="col-lg-1 col-md-2 col-sm-6 hidden-xs">
+					<label for="director">Director:</label>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+					<input type="text" class="form-control" id="director" style="width: 100%" placeholder="Enter director name">
+				</div>
+				<div class="col-lg-1 col-md-2 col-sm-6 hidden-xs">
+					<label for="writer">Writer:</label>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+					<input type="text" class="form-control" id="writer" style="width: 100%" placeholder="Enter writer name">
+				</div>
+				<div class="col-lg-1 col-md-2 col-sm-6 hidden-xs">
+					<label for="producer">Producer:</label>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+					<input type="text" class="form-control" id="producer" style="width: 100%" placeholder="Enter producer name">
+				</div>
+				<div class="col-lg-1 col-md-2 col-sm-6 hidden-xs">
+					<label for="composer">Composer:</label>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+					<input type="text" class="form-control" id="composer" style="width: 100%" placeholder="Enter composer name">
+				</div>
+			</div>
+			<div class="form-group form-inline row">
+				<div class="col-lg-1 col-md-2 col-sm-6 hidden-xs">
+					<label for="website">WebSite:</label>
+				</div>
+				<div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
+					<input type="text" class="form-control" id="website"
+						style="width: 100%" placeholder="Enter website name">
+				</div>
+				<div class="col-lg-1 col-md-2 col-sm-6 hidden-xs">
+					<label for="trailer">Youtube Trailer:</label>
+				</div>
+				<div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
+					<input type="text" class="form-control" id="trailer"
+						style="width: 100%" placeholder="Enter trailer URL">
+				</div>
+			</div>
+			<div class="form-group form-inline row">
+				<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+					<label for="review">Review:</label>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<textarea class="form-control" id="review" rows="5"
+						style="width: 100%" placeholder="Write review here"></textarea>
+				</div>
+			</div>
+			<div class="form-group form-inline row">
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<label for="rating">Rating:</label>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+					<label class="radio-inline text-danger"> <input
+						type="radio" name="optradio">Terrable
+					</label>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+					<label class="radio-inline text-primary"> <input
+						type="radio" name="optradio">Watchable
+					</label>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+					<label class="radio-inline text-success"> <input
+						type="radio" name="optradio">Best ever
+					</label>
+				</div>
+
+			</div>
+			<div class="form-group form-inline row">
+				<div class="col-lg-12 col-lg-push-3 col-md-12 col-md-push-3 col-sm-12 col-xs-12">
+					<button type="button" class="btn btn-default">Cancel</button>
+					<button type="button" class="btn btn-primary">Validate</button>
+					<button type="button" class="btn btn-success">Submit</button>
+					<button type="button" class="btn btn-danger">Delete</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<table id="movieTable" class="table table-hover table-bordered">
+		<tr></tr>
+	</table>
+</body>
+</html>
